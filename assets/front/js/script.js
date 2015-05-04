@@ -42,7 +42,7 @@ jQuery(document).ready(function(){
     /*** detail view start **/
     jQuery('.ajaxData').on('click' , '.detail-anchor' , function(){
         var data = callAjax('' , this.href, 0);
-        jQuery('.custPopup').show().append(data);
+        jQuery('.custPopup').show().children().append(data);
         return false;
     });
     /*** detail view end**/
